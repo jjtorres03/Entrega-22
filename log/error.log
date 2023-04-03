@@ -1,0 +1,17 @@
+[2023-04-02T21:29:18.476] [ERROR] default - MongoServerError: E11000 duplicate key error collection: ecommerce.productos index: code_1 dup key: { code: "XP-2" }
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:273:25
+    at handleOperationResult (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:327:20)
+    at Connection.onMessage (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:215:9)
+    at MessageStream.<anonymous> (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:63:60)
+    at MessageStream.emit (node:events:527:28)
+    at processIncomingData (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (C:\Users\torre\OneDrive\Documentos\backend-coderhouse-master\Entrega-22\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10) {
+  index: 0,
+  code: 11000,
+  keyPattern: { code: 1 },
+  keyValue: { code: 'XP-2' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
